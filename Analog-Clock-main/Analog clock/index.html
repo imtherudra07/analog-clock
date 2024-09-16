@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="css/circles.css">
+    <link rel="stylesheet" href="css/dots.css">
+    <link rel="stylesheet" href="css/niddles.css">
+    <link rel="stylesheet" href="css/labels.css">
+</head>
+
+<body>
+    <div class="clock">
+        <div id="time">
+            <div class="circle" style="--clr:#0fbddc;">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="120" cy="120" r="120" id="ss"></circle>
+                </svg>
+            </div>
+
+            <div class="circle" style="--clr:#baa0cf;">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="100" cy="100" r="100" id="mm"></circle>
+                </svg>
+            </div>
+
+            <div class="circle" style="--clr:#6a8571;">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="80" cy="80" r="80" id="hh"></circle>
+                </svg>
+            </div>
+
+
+            <!-- Niddle -->
+            <div class="niddles" style="--clr:rgb(120, 29, 29);" id="sc">
+                <i></i>
+            </div>
+
+            <div class="niddles niddle3" style="--clr:rgb(180, 132, 132);" id="mn">
+                <i></i>
+            </div>
+            <div class="niddles niddle2" style="--clr:#000000;" id="hr">
+                <i></i>
+            </div>
+
+
+            <span style="--i:1"><b   class="flower">*</b></span>
+            <span style="--i:2"><b   class="flower">*</b></span>
+            <span style="--i:3"><b   class="flower">*</b></span>
+            <span style="--i:4"><b   class="flower">*</b></span>
+            <span style="--i:5"><b   class="flower">*</b></span>
+            <span style="--i:6"><b   class="flower">*</b></span>
+            <span style="--i:7"><b   class="flower">*</b></span>
+            <span style="--i:8"><b   class="flower">*</b></span>
+            <span style="--i:9"><b   class="flower">*</b></span>
+            <span style="--i:10"><b  class="flower">*</b></span>
+            <span style="--i:11"><b  class="flower">*</b></span>
+            <span style="--i:12"><b  class="flower">*</b></span>
+        </div>
+
+    </div>
+</body>
+<script src="js/circles.js"></script>
+<script src="js/dots.js"></script>
+<script src="js/niddles.js"></script>
+
+</html>
